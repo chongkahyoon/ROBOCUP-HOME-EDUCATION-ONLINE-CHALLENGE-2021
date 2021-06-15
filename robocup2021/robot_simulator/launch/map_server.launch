@@ -1,0 +1,9 @@
+<launch>
+
+<!-- Map_server node -->
+  	<arg name="map_file" value="/home/cky/robocup/src/robocup2021/robot_simulator/map/task3_map.yaml">
+  	</arg> 
+  	<node pkg="map_server" type="map_server" name="map_server" args="$(arg map_file)"> 
+  	</node> 
+
+</launch>

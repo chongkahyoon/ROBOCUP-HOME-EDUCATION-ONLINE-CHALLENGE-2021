@@ -1,0 +1,6 @@
+<launch>
+		<node name="soundplay_node" pkg="sound_play" type="soundplay_node.py"/>
+		<node pkg="robot_simulator" name="navigation1" type="navigation1.py" launch-prefix="xterm -e"  output="screen"/> 
+		<include file="/home/cky/robocup/src/rchomeedu_speech/launch/lm.launch" ></include>
+		<include file="/home/cky/robocup/src/src/find_object_2d/launch/find_object_3d.launch" ></include>
+</launch>
